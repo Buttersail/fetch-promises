@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="index.js"></script>
+    <style>
+      .myBox {
+        border-style: solid;
+        padding: 1em;
+        height: 300px;
+        margin-right: 1em;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body style="font-family: sans-serif">
+    <h2>Fetch Demo</h2>
+    <div style="display: flex">
+      <div class="myBox">
+        <h3>Get single user</h3>
+        <input id="input-id" /><button id="btn-get">Get User</button>
+        <p>Name: <span id="id-name"></span></p>
+        <p>Phone: <span id="id-phone"></span></p>
+        <h3>Adress</h3>
+        <p>Street: <span id="id-street"></span></p>
+        <p>City: <span id="id-city"></span></p>
+        <p id="error" style="color: red"></p>
+      </div>
+      <div class="myBox" style="width: 70%; height: 400px; overflow-y: scroll">
+        <h3>Get all users</h3>
+        <button id="btn-get-all">Get All</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Name:</th>
+              <th>Phone:</th>
+              <th>Street:</th>
+              <th>City:</th>
+            </tr>
+          </thead>
+          <tbody id="tbl-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
